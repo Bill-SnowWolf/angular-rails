@@ -1,0 +1,24 @@
+<div ng-controller="TodosCtrl">
+<div class="content" style='margin-top:40px'>
+
+<div id="todo-list-container">
+  <ul>
+    <li ng-repeat="todo in todos"
+        ng-click="showTodo(todo)">
+      <h3>{{todo.title}} <small> Complete: {{todo.complete}}</small></h3>
+    </li>
+  </ul>
+</div>
+
+
+<div id="todo-view-container" ng-show="selectedTodo">
+  <h2>{{selectedTodo.title}}</h2>
+  <p>{{selectedTodo.complete}}</p>
+  <p>
+    Published at {{selectedTodo.created_at | date: 'mediumDate'}}
+    -  <a ng-href="{{selectedTodo.title}}"> {{selectedTodo.title}} </a>
+  </p>
+</div>
+
+</div>
+</div>
