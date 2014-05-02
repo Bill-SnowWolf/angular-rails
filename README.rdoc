@@ -6,7 +6,7 @@ resources and communication via ajax and json.
 
 
 ===1. Clone the repo:
-# git clone git@github.com/
+# git clone git@github.com:goMicroMetrics/angular-rails.git
 
 # cd angular-rails
 
